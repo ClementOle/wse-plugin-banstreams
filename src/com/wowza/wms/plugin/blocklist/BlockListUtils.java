@@ -83,7 +83,7 @@ public class BlockListUtils
 	{
 		BlockListUtils.mergeData();
 		String streamKey = application + separatorChar + appInstance + separatorChar + streamName;
-		return BlockListUtils.streamblockList.contains(streamKey);
+		return !BlockListUtils.streamblockList.contains(streamKey);
 	}
 
 	public static ArrayList<String> getblockListedStreams()
